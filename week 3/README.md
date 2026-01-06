@@ -8,7 +8,7 @@ No code modifications were required beyond setting these values.
 
 ### Parameters Used
 
-```python
+
 alpha = 0.07        # Learning rate
 gamma = 0.99        # Discount factor
 
