@@ -52,6 +52,27 @@ Week 3 introduces reinforcement learning and explores the limitations of tabular
 - Experience replay and target networks
 - Learning under delayed rewards
 
+### Week 4: Advanced Portfolio Optimization (Final Project)
+The culmination of the previous weeks: building an autonomous agent for multi-asset allocation (Bitcoin, Nifty, Gold).
+- **Core Architecture**:
+  - **Custom Environment**: `CryptoPortfolioEnv` (Gymnasium) handling continuous action spaces for portfolio weights.
+  - **State Space**: Augmented with **Kalman-smoothed** Price, Velocity, and Volatility to reduce noise for the agent.
+  - **Agent**: Proximal Policy Optimization (**PPO**) via `stable-baselines3`.
+- **Highlights**:
+  - Designing a risk-averse reward function (Returns - Volatility - Transaction Costs).
+  - Training on 2015–2022 data; Out-of-sample testing on 2023–2024.
+  - Visualizing dynamic asset allocation (shifting between Cash, Crypto, and Equities).
+- **Outcome**: A robust agent capable of detecting regime changes and preserving capital during downturns.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Python 3.10+**
+- **RL & ML**: `stable-baselines3`, `gymnasium`, `pytorch`, `shap`
+- **Finance & Data**: `yfinance`, `pykalman`, `pandas`, `numpy`
+- **Visualization**: `matplotlib`, `seaborn`
+
 ### Emphasis
 - Conceptual understanding of RL dynamics
 - Stability and generalization using function approximation
