@@ -41,7 +41,7 @@ Action Space:
 
 The agent optimizes log returns with penalties for risk and transaction costs:
 
-```python
+
 reward = portfolio_return \
          - (risk_aversion * portfolio_volatility) \
          - transaction_costs
